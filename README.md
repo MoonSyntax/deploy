@@ -1,6 +1,6 @@
 # 🦉 CodeSage – AI-Powered Pull Request Reviews for GitHub
 
-> **CodeSage** is an intelligent GitHub App that automates code reviews using advanced AI models. It detects bugs, validates PR titles, identifies dependencies, and uncovers semantic duplication — all within your existing GitHub workflow.
+> **CodeSage** is an intelligent GitHub App that automates code reviews using advanced AI models. It detects bugs, validates PR titles, identifies dependencies, and uncovers semantic duplication — all within the existing GitHub workflow.
 
 ---
 
