@@ -1,51 +1,46 @@
-# 🤖 CodeSage – AI-Powered Pull Request Reviews for GitHub
+# 🦉 CodeSage – AI-Powered Pull Request Reviews for GitHub
 
 > **CodeSage** is an intelligent GitHub App that automates code reviews using advanced AI models. It detects bugs, validates PR titles, identifies dependencies, and uncovers semantic duplication — all within your existing GitHub workflow.
 
 ---
 
-## 💡 Key Features
+##  Key Features
 
-- 🔍 **AI-Powered Pull Request Analysis**  
-  Uses Google Gemini and GPT-4 to review PR diffs, detect bugs, highlight anti-patterns, and recommend improvements.
+-  **AI-Powered Pull Request Analysis**  
+  CodeSage leverages state-of-the-art AI models such as Google Gemini and GPT-4 to automatically analyze pull request diffs, detect potential bugs, identify anti-patterns, and provide actionable suggestions to improve code quality.
 
-- 🧠 **PR Title Validation (with Notion Rules)**  
-  Automatically checks PR titles against dynamic company-specific rules stored in Notion — ensuring clarity and compliance.
+-  **PR Title Validation (with Notion Rules)**  
+ It validates pull request titles against dynamic, organization-specific naming rules defined in Notion, ensuring consistency, clarity, and adherence to team conventions.
 
-- ✨ **Inline AI Suggestions**  
-  Posts context-aware, line-level comments on pull requests, mimicking human-like review feedback.
+-  **Inline AI Suggestions**  
+  The app provides intelligent, context-aware feedback by posting inline comments directly on the relevant lines of code, offering developers human-like guidance within the GitHub interface.
+-  **PR Summarization**  
+ CodeSage generates concise, readable summaries of code changes, making it easier for reviewers to grasp the overall context and purpose of a pull request — even when it spans large or complex diffs.
+-  **Code Dependency Impact Analysis**  
+  By tracing semantic relationships between code modules, the app assesses how a proposed change might affect other components in the system, helping teams identify hidden risks and maintain code stability.
 
-- 📄 **PR Summarization**  
-  Converts complex diffs into clear summaries, helping reviewers understand changes at a glance — even when token limits are exceeded.
+-  **Semantic Duplicate Detection**  
+  Using advanced analysis techniques, CodeSage can detect functionally similar code blocks across the repository, even when they differ in structure or syntax — enabling teams to eliminate redundancy and promote reusability.
 
-- 🔗 **Code Dependency Impact Analysis**  
-  Detects how code changes might affect other modules using Neo4j graph database for semantic relationship tracing.
-
-- 🧬 **Semantic Duplicate Detection**  
-  Powered by Graph Neural Networks and AST-based comparison — detects functionally similar code even with different structure or syntax.
-
-- 📚 **Rule Matching with FAISS + Notion**  
-  Leverages FAISS vector search and RAG to validate PR titles against evolving standards defined in Notion — even with imperfect matches.
-
-- ⚙️ **Token-Aware Diff Chunking**  
-  Efficiently handles large pull requests using Tree-sitter-based parsing and chunking to stay within LLM token limits.
+-  **Token-Aware Diff Chunking**  
+  To ensure efficient processing of large pull requests, CodeSage automatically splits diffs into manageable segments using syntax-aware parsing. This enables accurate review while staying within the token limits of AI models.
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🔍 AI-Powered Review Summary  
+###  AI-Powered Review Summary  
 ![Review Summary](images/summary.png)
 
-### 🧠 Title Rule Validation  
+###  Title Rule Validation  
 ![Title Rule Check](images/title-check.png)
 
-### 💬 Inline Code Feedback  
+###  Inline Code Feedback  
 ![Inline Comments](images/inline.png)
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. Install **CodeSage** on your GitHub organization.
 2. On **pull request creation or update**:
@@ -57,11 +52,18 @@
    - Posts **inline comments and summary** on the PR.
 
 ---
-## 🔧 Installation
+##  Installation
 
-👉 [**Install CodeSage from GitHub Marketplace**](https://github.com/marketplace)  
+[**Install CodeSage from GitHub Marketplace**](https://github.com/marketplace)  
 Or install directly:  
 `https://github.com/apps/codesage/installations/new`
 
 **Requirements:**
 - GitHub repository access
+
+## Contact
+If you encounter issues or want to contribute:
+
+📧 Email: yourname@example.com
+
+🌐 GitHub: github.com/yourusername/codesage
